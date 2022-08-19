@@ -1,0 +1,140 @@
+/*
+Palette: https://scrimba.com/links/hometown-palette
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+}
+
+:root {
+  --RED-: #e63946;
+  --LIGHT-: #f1faee;
+  --AQUA-: #a8dadc;
+  --LIGHT-BLUE-: #457b9d;
+  --DARK-BLUE-: #1d3557;
+  --DESERT-SAND: #e9c8a7;
+  --ORANGE-CRAYOLA: #fe763c;
+  --MARIGOLD: #f4ae37;
+  --SILVER-SAND: #bac2c8;
+}
+
+body {
+  text-align: center;
+  border: 5px solid white;
+}
+
+/* HERO SECTION */
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./images/saginaw.png);
+  background-size: cover;
+  background-position: center;
+  padding: 122px 0;
+}
+
+#hero-title {
+  font-size: 34px;
+  background: var(--ORANGE-CRAYOLA);
+  margin: 0 auto;
+  padding: 5px 15px 2px;
+  border-radius: 15px;
+  color: var(--LIGHT-);
+}
+
+#hero-desc {
+  max-width: 412px;
+  font-size: 19px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  background: var(--MARIGOLD);
+  margin: 0 auto;
+  padding: 5px 15px;
+  border-radius: 15px;
+  color: var(--LIGHT-);
+  margin: 13px auto;
+}
+
+/* ACTIVITIES SECTION */
+
+#act-cont {
+  background: var(--SILVER-SAND);
+}
+
+#act-heading {
+  padding-top: 25px;
+}
+
+#act-options {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 30px;
+}
+
+.act-img {
+  width: 110px;
+  border: 2px solid var(--ORANGE-CRAYOLA);
+  border-radius: 50%;
+}
+
+.act-indiv {
+  width: 150px;
+  padding: 10px;
+}
+.act-indiv:hover {
+  box-shadow: 0 0 5px var(--ORANGE-CRAYOLA);
+}
+
+#act-two {
+  margin: 0 55px;
+}
+
+.act-indiv-heading {
+  padding: 20px 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* GUIDE SECTION */
+
+#guide-avatar {
+  margin: 20px 0 20px 15px;
+  width: 150px;
+}
+
+.guide-container {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  background: var(--DESERT-SAND);
+  margin: 40px auto;
+  border-radius: 15px;
+  box-shadow: 0 7px var(--MARIGOLD);
+}
+.guide-container:hover {
+  animation: container 4s ease-in-out 1;
+}
+
+@keyframes container {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    background: var(--ORANGE-CRAYOLA);
+  }
+}
+
+#guide-title {
+  font-size: 24px;
+}
+
+#guide-desc {
+  margin: 15px 50px;
+}
